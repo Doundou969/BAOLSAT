@@ -3,32 +3,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - Sunu Blue Tech</title>
+    <title>Services - BAOLSAT 2026</title>
     <style>
         body { 
-            font-family: Arial, sans-serif; margin: 0; padding: 20px; 
-            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            font-family: 'Segoe UI', sans-serif; margin: 0; padding: 20px; 
+            background: linear-gradient(135deg, #0b0f13 0%, #1a2f23 100%);
             color: white; text-align: center;
         }
-        .container { max-width: 600px; margin: 0 auto; background: rgba(255,255,255,0.1); 
-            padding: 40px; border-radius: 20px; backdrop-filter: blur(10px);
+        .container { 
+            max-width: 700px; margin: 0 auto; background: rgba(255,255,255,0.05); 
+            padding: 40px; border-radius: 25px; backdrop-filter: blur(15px);
+            border: 1px solid rgba(46, 204, 113, 0.2);
         }
-        nav { background: rgba(0,0,0,0.3); padding: 15px; border-radius: 15px; margin-bottom: 30px; }
-        nav a { color: #00d4ff; text-decoration: none; margin: 0 20px; font-weight: bold; }
-        nav a:hover { color: white; }
-        h1 { font-size: 2.5em; margin-bottom: 10px; }
+        nav { background: rgba(0,0,0,0.4); padding: 15px; border-radius: 15px; margin-bottom: 30px; }
+        nav a { color: #2ecc71; text-decoration: none; margin: 0 20px; font-weight: bold; }
+        nav a:hover { color: white; text-shadow: 0 0 8px #2ecc71; }
+        
+        h1 { font-size: 2.5em; margin-bottom: 10px; color: #2ecc71; }
+        
+        .service-card {
+            background: rgba(255,255,255,0.07);
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 15px;
+            text-align: left;
+            border-left: 5px solid #2ecc71;
+        }
+        .service-card h3 { margin-top: 0; color: #2ecc71; }
+        
+        button { 
+            background: #2ecc71; color: #0b0f13; border: none; 
+            padding: 15px 30px; font-size: 1.1em; border-radius: 50px; 
+            cursor: pointer; font-weight: bold; transition: 0.3s;
+        }
+        button:hover { background: #27ae60; transform: scale(1.05); }
     </style>
 </head>
 <body>
     <div class="container">
         <nav>
             <a href="/">🏠 Accueil</a>
-            <a href="/about">👨‍💻 À Propos</a>
+            <a href="/dashboard">🛰️ Dashboard</a>
             <a href="/services">⚙️ Services</a>
         </nav>
-        <h1>⚙️ Nos Services</h1>
-        <p>Développement web, mobile et solutions tech adaptées au Sénégal.</p>
-        <button onclick="history.back()" style="background: #00d4ff; color: black; border: none; padding: 15px 30px; font-size: 1.2em; border-radius: 50px; cursor: pointer;">← Retour</button>
+        
+        <h1>⚙️ Nos Services BAOLSAT</h1>
+        <p style="color: #8b949e; margin-bottom: 30px;">Solutions de précision par satellite pour l'écosystème du Sénégal.</p>
+
+        <div class="service-card">
+            <h3>🛰️ Surveillance Copernicus</h3>
+            <p>Analyse en temps réel de la vigueur des cultures (NDVI) et détection des anomalies de croissance via Sentinel-2.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>📈 Bourse Agricole Dynamique</h3>
+            <p>Accès aux cours du jour pour le Riz, l'Arachide et l'Oignon afin d'optimiser les ventes des producteurs.</p>
+        </div>
+
+        <div class="service-card">
+            <h3>🚨 Alertes Précoces</h3>
+            <p>Notification automatique en cas de stress hydrique ou de risque phytosanitaire détecté par nos algorithmes.</p>
+        </div>
+
+        <button onclick="history.back()">← Retour au Hub</button>
     </div>
 </body>
 </html>
